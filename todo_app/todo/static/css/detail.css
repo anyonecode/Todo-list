@@ -1,0 +1,97 @@
+body {
+    background-image: url('/static/media/create.jpg');
+    background-size: cover;
+  }
+  
+.container  {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 600px;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+}
+  
+.content {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    text-align: justify;
+    color: black;
+    padding: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    margin-left: 80px;
+
+
+}
+  
+h1 {
+    font-weight: 600;
+    margin-left: 50px;
+
+}
+  
+h3 {
+    font-weight: 300;
+    text-align: center;
+    margin-left: 50px;
+
+
+}
+  
+.flap {
+    width: 100%;
+    height: 100%;
+}
+  
+.flap::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    background:  url('/static/media/eye1.jpg');
+    background-position: -40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
+}
+  
+.flap::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    right: 0;
+    background: url('/static/media/eye2.jpg');
+    background-size: cover;
+    background-position: 0px;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+  
+.container:hover .flap::after {
+    transform: translatex(350px);
+
+}
+  
+.container:hover .flap::before{
+    transform: translatex(-350px);
+
+}
+.navbar{
+    width: 1480px;
+    border-radius: 6px;
+    
+}
+.button{
+    float: right;
+}
+.navbar a{
+    margin-left: 20px;
+}

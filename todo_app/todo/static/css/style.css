@@ -1,0 +1,58 @@
+body{
+    background-image: url('/static/media/create.jpg');
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.todo{
+    margin-top: 30px;
+    box-sizing: border-box;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    padding-right: 20px;
+    padding-left: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 500px;
+
+}
+.tasks{
+    margin: 15px;
+    gap: 50px;
+    background-color: rgba(201, 201, 201, 0.567);
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: capitalize;
+
+
+}
+.tasks a{
+    float: right;
+    margin-left: 20px;
+    padding-right: 30px;
+}
+   
+button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+button:hover{
+    background-color: rgb(0, 255, 247);
+    color: rgb(0, 0, 0);
+}
+.navbar{
+    width: 1480px;
+    border-radius: 6px;
+    
+}
+.button{
+    float: right;
+}
+.navbar a{
+    margin-left: 20px;
+}
+.todo img{
+    width: 400px;
+    margin-top: -60px;
+}

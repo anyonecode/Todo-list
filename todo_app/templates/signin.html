@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/adcdf23364.js" crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}">
+    <title>signin</title>
+</head>
+<body>
+    
+    <form action="/signin" method='POST'>
+        <h1>Login</h1>
+        {% csrf_token %}
+        <div class="enter">
+            <input type="text" id='username' name='username' placeholder='Create a username'Required>
+
+            <input type="password" id='pass1' name='pass1' placeholder='Enter Your Password'Required>
+        </div>
+
+        <div class="forgot"><a href="#">Forgot password?</a></div>
+        <button type="submit" class="save" >Login</button>
+        <p class='sign'>Don't have an account?<a href="{% url 'signup'  %}">Signup</a></p>
+        <div class="or">
+            <hr class='hr1'>
+            Or
+            <hr class='hr1'>
+        </div><br>
+        <button type="submit" class="face" ><i class="fa-brands fa-facebook"></i>Login with Facebook</button><br><br>
+        <button type="submit" class="google" ><i class="fa-brands fa-google"></i> Login with Google</button>
+    </form>
+</body>
+</html>

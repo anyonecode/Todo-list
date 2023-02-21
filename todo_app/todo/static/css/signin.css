@@ -1,0 +1,88 @@
+body{
+    background-image: url('/static/media/login.jpg');
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+form{
+    background: #f2eecbb6;
+    box-sizing: border-box;
+    width: 320px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+.enter{
+    display: grid;
+}
+.enter input{
+    margin: 8px;
+    width: 250px;
+    height:30px;
+    border-radius: 6px;
+    border-color: rgb(182, 182, 182);
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 31px;
+    background-color: rgba(255, 255, 255, 0.933);
+}
+.search input[type="search"]:focus {
+    outline : none;
+}
+.forgot a {
+    text-decoration: none;
+    color: rgb(21, 0, 255);
+}
+.forgot{
+    margin: 5px;
+    
+}
+.save{
+    background-color: rgb(255, 106, 0);
+    color: white;
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+    border-style: none;
+    margin-top: 10px;
+}
+.sign a{
+    text-decoration: none;
+    color: rgb(0, 21, 255);
+}
+.or{
+    display: flex;
+    font-size: 15px;
+    color: rgb(78, 78, 78);
+}
+.hr1{
+    width: 40%;
+}
+.face,.google{
+    background-color: rgb(0, 81, 232);
+    color: white;
+    width: 250px;
+    height: 35px;
+    border-radius: 6px;
+    border-style: none;
+    padding-top: 4px;
+}
+.face i{
+    float: left;
+    font-size: 17px;
+}
+.google{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    border: rgb(192, 192, 192);
+    border-style: solid;
+    border-width: 2px;
+}
+.google i{
+    float: left;
+    font-size: 17px;
+    color: black;
+}
